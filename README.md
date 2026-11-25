@@ -61,20 +61,14 @@ LFP preprocessing was performed using the [LFPAnalysis](https://github.com/seqas
 
 ### Tested Software Versions
 
-The demonstration scripts have been tested using the following software versions:
+The Python analysis environment includes the following software versions:
 
-| Software | Version |
-|---|---|
-| Operating system | [Insert version] |
-| Python | [Insert version] |
-| R | [Insert version] |
-| NumPy | [Insert version] |
-| pandas | [Insert version] |
-| SciPy | [Insert version] |
-| patsy | [Insert version] |
-| statsmodels | [Insert version] |
-| tqdm | [Insert version] |
-| MNE-Python | [Insert version] |
+* Python 3.12.0 
+* NumPy 1.26.4
+* pandas 2.2.2
+* seaborn 0.13.2
+
+The behavioral modeling code uses base R and the standard `stats` package.
 
 ### Hardware Requirements
 
@@ -184,6 +178,7 @@ Detailed descriptions of the behavioral models, neural analyses, and statistical
 
 ## License
 
+[MIT License](https://github.com/christinamaher/maher_etal2026/blob/main/LICENSE)
 
 ## Citation
 
