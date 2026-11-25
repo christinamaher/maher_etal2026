@@ -1,5 +1,5 @@
 source('Behavioral_Modeling.R')
-d <- read.csv('demo/simulated_behavioral_data.csv')
+d <- read.csv('simulated_behavioral_data.csv')
 d <- subset(d, subject == 'SIM01')
 cols <- setNames(lapply(c('color','shape','texture'), function(x) paste0('option',1:3,'_',x)), c('color','shape','texture'))
 set.seed(42)
