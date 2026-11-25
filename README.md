@@ -45,22 +45,6 @@ Simulated datasets and demonstration scripts:
 
 The behavioral modeling code is implemented in R, and the neural analysis code is implemented in Python.
 
-The Python code requires the following packages:
-
-* NumPy
-* pandas
-* SciPy
-* patsy
-* statsmodels
-* tqdm
-* MNE-Python
-
-The behavioral modeling code uses base R and the standard `stats` package. No additional R packages are required.
-
-LFP preprocessing was performed using the [LFPAnalysis](https://github.com/seqasim/LFPAnalysis) package. This package is not required to run the demonstration analyses, which use simulated, preprocessed neural data.
-
-### Tested Software Versions
-
 The Python analysis environment includes the following software versions:
 
 * Python 3.12.0 
@@ -69,6 +53,9 @@ The Python analysis environment includes the following software versions:
 * seaborn 0.13.2
 
 The behavioral modeling code uses base R and the standard `stats` package.
+
+LFP preprocessing was performed using the [LFPAnalysis](https://github.com/seqasim/LFPAnalysis) package. This package is not required to run the demonstration analyses, which use simulated, preprocessed neural data.
+
 
 ### Hardware Requirements
 
@@ -92,10 +79,6 @@ Install R from the [Comprehensive R Archive Network (CRAN)](https://cran.r-proje
 
 No additional R packages are required to run the behavioral modeling code.
 
-### Typical Installation Time
-
-Installation on a standard desktop computer takes approximately [insert installation time], depending on the existing software environment and internet connection.
-
 ## Demonstration
 
 Small simulated behavioral and neural datasets are provided in the `demo/` directory to demonstrate the core analysis workflows.
@@ -116,8 +99,6 @@ Rscript demo/behavioral_demo.R
 
 **Expected output:** Fitted model parameters, negative log likelihoods, and Bayesian information criterion (BIC) values for the UA-RL and SA-RL models.
 
-**Expected runtime:** [Insert runtime] on a standard desktop computer.
-
 ### Neural Analysis
 
 The simulated neural dataset contains 3,888 observations from 12 simulated electrodes, together with associated behavioral regressors and time-point identifiers.
@@ -131,8 +112,6 @@ python demo/neural_demo.py
 ```
 
 **Expected output:** Electrode-level regression coefficients, permutation-derived z-scores, and associated p-values. The demonstration is designed to illustrate the recovery of the imposed relationship between expected value and neural power.
-
-**Expected runtime:** [Insert runtime] on a standard desktop computer.
 
 ## Instructions for Use
 
