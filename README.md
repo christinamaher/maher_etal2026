@@ -30,7 +30,7 @@ Core reinforcement learning modeling functions, including:
 * Held-out likelihood estimation
 * Leave-one-block-out cross-validation
 
-### `demo/`
+### Simulated Datasets and Demonstration Scripts
 
 Simulated datasets and demonstration scripts:
 
@@ -81,8 +81,7 @@ No additional R packages are required to run the behavioral modeling code.
 
 ## Demonstration
 
-Small simulated behavioral and neural datasets are provided in the `demo/` directory to demonstrate the core analysis workflows.
-
+Small simulated behavioral and neural datasets are provided in the repository to demonstrate the core analysis workflows.
 All demonstration data are entirely synthetic and do not contain data from human participants.
 
 ### Behavioral Modeling
@@ -94,7 +93,7 @@ Choices are generated using attention-weighted feature values and a softmax choi
 To run the behavioral modeling demonstration, execute the following command from the repository root:
 
 ```bash
-Rscript demo/behavioral_demo.R
+Rscript behavioral_demo.R
 ```
 
 **Expected output:** Fitted model parameters, negative log likelihoods, and Bayesian information criterion (BIC) values for the UA-RL and SA-RL models.
@@ -108,7 +107,7 @@ A negative relationship between expected value and neural power was imposed duri
 To run the neural analysis demonstration, execute the following command from the repository root:
 
 ```bash
-python demo/neural_demo.py
+python neural_demo.py
 ```
 
 **Expected output:** Electrode-level regression coefficients, permutation-derived z-scores, and associated p-values. The demonstration is designed to illustrate the recovery of the imposed relationship between expected value and neural power.
